@@ -16,7 +16,7 @@ const items = [
     category: 'Diagnóstico',
     label: 'para entrega do diagnóstico tributário completo — créditos mapeados, riscos identificados, relatório fundamentado',
     featured: true,   // card de destaque: promessa diferenciadora da Falcoa
-    note: 'Prazo contado a partir da entrega da documentação',
+    note: 'Prazo a partir da entrega da documentação ou concessão de procuração e certificado digital para download',
   },
   {
     value: 'R$ 250Bi+',
