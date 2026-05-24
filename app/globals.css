@@ -1,26 +1,33 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --falcoa-navy:       #1C2B3A;
+  --falcoa-slate:      #2E4057;
+  --falcoa-gold:       #C9A84C;
+  --falcoa-gold-light: #E8C97A;
+  --falcoa-gray-bg:    #F4F5F7;
+  --falcoa-white:      #FFFFFF;
+  --falcoa-text:       #1A1A2E;
+  --falcoa-muted:      #64748B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: auto;
+  overflow-x: hidden;
+  scroll-behavior: auto;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: var(--falcoa-white);
+  color: var(--falcoa-text);
+  font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-alexandria), 'Alexandria', sans-serif;
 }
